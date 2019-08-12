@@ -1,0 +1,14 @@
+{% extends 'eximp/layout.html' %}
+
+{% block content %}
+<h3 class="center-align red lighten-3">{{exim.title}}</h3>
+<div class="card">
+    <div class="card-content">
+        {{exim.body}}
+    </div>
+    <div class="card-action">
+        {{exim.created_at}}
+    </div>
+</div>
+<a href='/eximp' class='btn'>Go Back</a>
+{% endblock %}
